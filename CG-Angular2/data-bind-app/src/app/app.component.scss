@@ -1,0 +1,34 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.blue-bold {
+    font-weight: bold;
+    color:darkblue
+}
+
+.input-data {
+    font-style: italic;
+    color: black;
+}
+
+.form-control {
+    margin: 10px 0;
+}
+
+.input-section {
+    display: flex;
+}
+
+.buttons-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.btn {
+    margin: 10px;
+}

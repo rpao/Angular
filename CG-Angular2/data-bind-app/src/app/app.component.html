@@ -1,0 +1,29 @@
+<div class="flex-column">
+  <h1 style="text-align:center">Databinding</h1>
+  <div class="input-section">
+    <input type="text" class="form-control" [(ngModel)]="username" pattern="Username">
+    <div class="buttons-section">
+      <button
+        type="button"
+        class="btn btn-primary"
+        [disabled]="disabledButton"
+        (click)="clearUsername()">
+        Clear Username
+      </button>
+    
+      <button
+        type="button"
+        class="btn btn-secondary"
+        [disabled]="!username"
+        (click)="username = ''">
+        Clear Username
+      </button>
+    </div>
+  </div>
+</div>
+<div class="flex-column">
+  <p class="input-data">
+    <span class="blue-bold">Username:</span> {{ username }}
+  </p>
+</div>
+
